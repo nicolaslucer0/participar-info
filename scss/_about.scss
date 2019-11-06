@@ -8,6 +8,11 @@
   .sub-section{
     padding-top: 15px;
     padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     .img-section{
       width: 150px;
       height: 150px;
