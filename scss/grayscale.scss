@@ -38,3 +38,17 @@ a {
 footer {
   padding: 5rem 0;
 }
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.particles {
+  margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;  
+}

@@ -4,16 +4,16 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
+    background-color: #003470;
+    border-color: #003470;
     box-shadow: none;
     outline: none;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+    background-color: #0078ff;
+    border-color: #0078ff;
 }
 
 section {
@@ -72,6 +72,9 @@ section .section-title {
 }
 
 .backside {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
     position: absolute;
     top: 0;
     left: 0;

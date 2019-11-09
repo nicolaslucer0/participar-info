@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #0078ff;
+  border: 1px solid #0078ff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -76,15 +76,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #0078ff;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #0054b3;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #0078ff;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #0078ff;
   }
 }
 
@@ -94,7 +94,10 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: #000059;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #000059), color-stop(63%, #00001a), color-stop(100%, #00001a));
+  background: linear-gradient(to bottom, #000059 0%, #00001a 63%, #00001a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000059', endColorstr='#00001a', GradientType=0 );
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -156,25 +159,24 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #0078ff;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #0060cc;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #0060cc;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #0054b3 !important;
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: linear-gradient(to bottom, #00001a 100% 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
   background-color: #0078ff;
 }
 
@@ -182,13 +184,18 @@
   margin-bottom: 5rem;
 }
 
+.about-section .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-section .sub-section {
-  padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 30%;
 }
 
 .about-section .sub-section .img-section {
@@ -199,14 +206,14 @@
   margin-bottom: 15px;
 }
 
-.projects-section {
-  padding: 10rem 0;
+.projects-section .text-white {
+  color: white !important;
 }
 
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #0078ff;
   }
 }
 
@@ -216,7 +223,7 @@
 
 @media (min-width: 992px) {
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #0078ff;
     border-width: .25rem;
     width: 30%;
   }
@@ -283,7 +290,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #0078ff;
 }
 
 .contact-section .card h4 {
@@ -294,7 +301,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #0078ff;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -327,16 +334,16 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #108d6f;
-  border-color: #108d6f;
+  background-color: #003470;
+  border-color: #003470;
   box-shadow: none;
   outline: none;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #007b5e;
-  border-color: #007b5e;
+  background-color: #0078ff;
+  border-color: #0078ff;
 }
 
 section {
@@ -388,6 +395,9 @@ section .section-title {
 }
 
 .backside {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -445,12 +455,12 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #0078ff;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #004899;
 }
 
 .bg-black {
@@ -458,13 +468,27 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #0078ff !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #0078ff !important;
 }
 
 footer {
   padding: 5rem 0;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.particles {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
